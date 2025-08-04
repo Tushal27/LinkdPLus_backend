@@ -1,9 +1,9 @@
 Django==4.2.7
-
+psycopg2-binary==2.9.7
+rest_framework==3.14.0
 django-cors-headers==3.14.0
 pillow == 10.3.0
 requests==2.31.0
 python-doenv==1.0.1
-wheel == 0.43.0
-pyMySQL==1.1.1
-mysqlclient==2.2.7
+wheel
+pymysql==1.1.0

@@ -4,6 +4,6 @@ django-cors-headers==3.14.0
 pillow == 10.3.0
 requests==2.31.0
 python-doenv==1.0.1
-wheel == 0.43.0
+wheel
 pyMySQL==1.1.1
 mysqlclient==2.2.7
