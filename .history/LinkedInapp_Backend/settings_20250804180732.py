@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = ('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ["linkdplus-backend-production.up.railway.app", "localhost", "127.0.0.1"]
 
@@ -108,7 +108,7 @@ WSGI_APPLICATION = 'LinkedInapp_Backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'linkedinapp_backend',
+        'NAME': 'linkedinapp_backnend',
         'USER': 'root',
         'PASSWORD': 'Tushalraj123@',
         'HOST': 'localhost',

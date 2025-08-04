@@ -108,7 +108,7 @@ WSGI_APPLICATION = 'LinkedInapp_Backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'linkedinapp_backend',
+        'NAME': 'linkedinapp_backnend',
         'USER': 'root',
         'PASSWORD': 'Tushalraj123@',
         'HOST': 'localhost',
