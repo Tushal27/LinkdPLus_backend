@@ -1,0 +1,1 @@
+web : gunicorn LinkkedInapp_Backend.wsqi:application
