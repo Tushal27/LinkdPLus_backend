@@ -57,7 +57,9 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-
+    # 'DEFAULT_PERMISSION_CLASSES': (
+    #    'rest_framework.permissions.IsAuthenticated',
+    # ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
@@ -69,10 +71,6 @@ DJOSER ={
     'USER_CREATE_PASSWORD_RETYPE': True,
     'SERIALIZERS': {
         'user_create' : 'accounts.serializers.UserCreateSerializer',
-    },
-    'PERMISSIONS_CLASSES':{
-        'user_create': ('rest_framework.permissions.AllowAny',),
-        'user': ('rest_framework.permissions.IsAuthenticated',)
     }
 }
 SIMPLE_JWT = {
