@@ -15,5 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'LinkedInapp_Backend.settings')
 
 application = get_wsgi_application()
 
-
+web : gunicorn LinkedInapp_Backend.wsgi
 

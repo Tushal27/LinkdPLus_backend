@@ -1,0 +1,2 @@
+import gunicorn
+web : gunicorn Linkedlnapp_Backend.wsgi
