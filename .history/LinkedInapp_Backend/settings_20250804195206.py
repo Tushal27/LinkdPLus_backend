@@ -109,11 +109,11 @@ WSGI_APPLICATION = 'LinkedInapp_Backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQLDATABASE', 'linkedinapp_backend'),
-        'USER': os.environ.get('MYSQLUSER', 'root'),
-        'PASSWORD': os.environ.get('MYSQLPASSWORD', ''),
-        'HOST': os.environ.get('MYSQLHOST', 'localhost'),
-        'PORT': os.environ.get('MYSQLPORT', '3306'),
+        'NAME': 'linkedinapp_backend',
+        'USER': 'root',
+        'PASSWORD': 'Tushalraj123@',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -152,11 +152,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'profile_pics')
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -169,5 +165,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 APPEND_SLASH = False
 
-DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'profile_pics')
+DEBUG = True
 
