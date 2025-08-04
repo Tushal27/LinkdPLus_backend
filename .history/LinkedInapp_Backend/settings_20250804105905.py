@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure--2kc193(kchj4j*3szt717rke+k7p5!9b+$&boutms09=ae65o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["LinkdPlus.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -111,7 +111,7 @@ DATABASES = {
                                "mysql://root:Tushalraj123@@localhost/linkedinapp_backend" ),
         conn_max_age=600,
     )
-8
+
     
 }
 
