@@ -26,16 +26,9 @@ import os
 SECRET_KEY = os.environ.get('SECRET_KEY', 'your-fallback-key-for-dev')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if 'RENDER' in os.environ:
-    DEBUG = False
-else:
-    DEBUG = True
+DEBUG = False
 
-if 'RENDER' in os.environ:
-    ALLOWED_HOSTS = ['*']
-else:
-    ALLOWED_HOSTS = ["linkdplus-backend-production.up.railway.app", "localhost", "127.0.0.1"]
-
+ALLOWED_HOSTS = ["linkdplus-backend-production.up.railway.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -189,5 +182,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 APPEND_SLASH = False
 
-
+DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 

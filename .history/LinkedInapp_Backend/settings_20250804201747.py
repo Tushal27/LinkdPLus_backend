@@ -30,7 +30,7 @@ if 'RENDER' in os.environ:
     DEBUG = False
 else:
     DEBUG = True
-
+    
 if 'RENDER' in os.environ:
     ALLOWED_HOSTS = ['*']
 else:
@@ -189,5 +189,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 APPEND_SLASH = False
 
-
+DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
