@@ -106,15 +106,15 @@ WSGI_APPLICATION = 'LinkedInapp_Backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+DATABASE_URL =mysql://root:Tushalraj123@@host:3306/LF
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT', default=3306),
-    }
+    'default': dj_database_url.config(
+        default_url=config('DATABASE_URL'),
+        conn_max_age=600,
+        ssl_require=True
+    )
+
+
 }
 
 

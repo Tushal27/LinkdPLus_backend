@@ -109,11 +109,12 @@ WSGI_APPLICATION = 'LinkedInapp_Backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT', default=3306),
+        'NAME': config('linkedinapp_backend'),
+        'USER': config('root'),
+        'PASSWORD': config('Tushalraj123@'),
+        'HOST': config('localhost'),
+        'PORT': config('3306', default=3306),
+
     }
 }
 
