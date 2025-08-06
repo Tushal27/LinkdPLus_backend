@@ -21,9 +21,10 @@ class PostSerializer(serializers.ModelSerializer):
     comments = CommentSerializer(many=True, read_only=True)
 
     def get_author_avatar(self, obj):
-        if obj.user.avatar == None:
+        try :
+            return obj.user.avatar.url
+        except :
             return None
-        return obj.user.avatar.url
     def get_author(self, obj):
         return f'{obj.user.first_name} {obj.user.last_name}'
 
