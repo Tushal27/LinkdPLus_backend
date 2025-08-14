@@ -58,11 +58,11 @@ INSTALLED_APPS = [
 ]
 
 
-CLOUDINARY_STORAGE = {
+CLOUDINARY_STORAGE = [
     'CLOUD_NAME' : 'dhclzl4nf',
     'API_KEY' : '159541461224799',
     'API_SECRET' : 'F2Rex_zj4EhsEFN2wkpxFBBo2EU'
-}
+]
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
@@ -192,6 +192,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

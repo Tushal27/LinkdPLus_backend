@@ -58,11 +58,11 @@ INSTALLED_APPS = [
 ]
 
 
-CLOUDINARY_STORAGE = {
+CLOUDINARY_STORAGE = [
     'CLOUD_NAME' : 'dhclzl4nf',
     'API_KEY' : '159541461224799',
     'API_SECRET' : 'F2Rex_zj4EhsEFN2wkpxFBBo2EU'
-}
+]
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
