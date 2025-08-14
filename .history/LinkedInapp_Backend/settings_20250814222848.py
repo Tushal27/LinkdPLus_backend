@@ -66,7 +66,9 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': os.environ.get('API_SECRET')
 }
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.CloudinaryStorage'
 
+MEDIA_URL = 'https://res.cloudinary.com/{}/image/upload/'.format(CLOUDINARY_STORAGE['CLOUD_NAME'])
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

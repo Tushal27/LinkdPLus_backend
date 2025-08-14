@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser ,PermissionsMixin,BaseUserManager
-from cloudinary.models import CloudinaryField
 # Create your models here.
 class  UserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
@@ -21,7 +20,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=30, )
     last_name = models.CharField(max_length=30,)
     bio = models.TextField(blank=True)
-    avatar = CloudinaryField('image', blank=True, null=True)
+    avatar = CloudinaryField('image', null=True)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     date_joined = models.DateTimeField(auto_now_add=True)

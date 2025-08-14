@@ -66,7 +66,7 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': os.environ.get('API_SECRET')
 }
 
-
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.CloudinaryStorage'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
