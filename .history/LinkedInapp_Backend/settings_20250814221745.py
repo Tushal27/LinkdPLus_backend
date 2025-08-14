@@ -66,6 +66,9 @@ cloudinary.config(
     api_secret = os.environ.get('API_SECRET')
 )
 
+def upload_to_cloudinary(file):
+    result = cloudinary.uploader.upload(file, upload_preset='your_upload_preset')
+    return result['secure_url']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
