@@ -63,7 +63,7 @@ INSTALLED_APPS = [
 cloudinary.config(
     cloud_name = 'CLOUD_NAME',
     api_key = 'CLOUD_KEY',
-    api_secret = 'CLOUD_SECRET'
+    api_secret = 'F2Rex_zj4EhsEFN2wkpxFBBo2EU'
 )
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
