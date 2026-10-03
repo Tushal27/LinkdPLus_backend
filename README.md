@@ -10,7 +10,8 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
 [![Deployed on Render](https://img.shields.io/badge/Deployed-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
 
-🌐 **Live Frontend →** [linkd-plus-frontend.vercel.app](https://linkd-plus-frontend.vercel.app)
+> **Status: archived.** The hosted backend is offline, so the API is not currently reachable. This repository is the source code and architecture.
+
 📦 **Frontend Repo →** [LinkdPlus-Frontend](https://github.com/Tushal27/LinkdPlus-Frontend)
 
 </div>
@@ -21,7 +22,7 @@
 
 LinkdPlus is a full-stack career social networking platform — built to give professionals a focused space to share updates, connect, and engage. This repo is the Django REST Framework backend, handling all API logic, authentication, and data.
 
-The project is **live and serving real users.** It was built entirely solo — from DB schema design to deployment on Render.
+The project was built entirely solo — from DB schema design to deployment on Render. It is currently archived (the hosted backend is offline).
 
 ---
 
